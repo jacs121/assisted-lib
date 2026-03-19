@@ -44,6 +44,105 @@
         "documentation": {}
     },
     {
+        "label": "wave",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wave",
+        "description": "wave",
+        "detail": "wave",
+        "documentation": {}
+    },
+    {
+        "label": "prompting",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "prompting",
+        "description": "prompting",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PySide6",
+        "description": "PySide6",
+        "isExtraImport": true,
+        "detail": "PySide6",
+        "documentation": {}
+    },
+    {
+        "label": "QBuffer",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QByteArray",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QIODevice",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QThread",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QAudioFormat",
+        "importPath": "PySide6.QtMultimedia",
+        "description": "PySide6.QtMultimedia",
+        "isExtraImport": true,
+        "detail": "PySide6.QtMultimedia",
+        "documentation": {}
+    },
+    {
+        "label": "QAudioOutput",
+        "importPath": "PySide6.QtMultimedia",
+        "description": "PySide6.QtMultimedia",
+        "isExtraImport": true,
+        "detail": "PySide6.QtMultimedia",
+        "documentation": {}
+    },
+    {
         "label": "tkinter",
         "kind": 6,
         "isExtraImport": true,
@@ -119,106 +218,6 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "wave",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "wave",
-        "description": "wave",
-        "detail": "wave",
-        "documentation": {}
-    },
-    {
-        "label": "subprocess",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "subprocess",
-        "description": "subprocess",
-        "detail": "subprocess",
-        "documentation": {}
-    },
-    {
-        "label": "tempfile",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tempfile",
-        "description": "tempfile",
-        "detail": "tempfile",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "QtWidgets",
-        "importPath": "PySide6",
-        "description": "PySide6",
-        "isExtraImport": true,
-        "detail": "PySide6",
-        "documentation": {}
-    },
-    {
-        "label": "QThread",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "Signal",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QBuffer",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QByteArray",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QIODevice",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QAudioFormat",
-        "importPath": "PySide6.QtMultimedia",
-        "description": "PySide6.QtMultimedia",
-        "isExtraImport": true,
-        "detail": "PySide6.QtMultimedia",
-        "documentation": {}
-    },
-    {
-        "label": "QAudioOutput",
-        "importPath": "PySide6.QtMultimedia",
-        "description": "PySide6.QtMultimedia",
-        "isExtraImport": true,
-        "detail": "PySide6.QtMultimedia",
         "documentation": {}
     },
     {
@@ -303,6 +302,15 @@
         "documentation": {}
     },
     {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        central = QtWidgets.QWidget()\n        self.setCentralWidget(central)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "BasicOverlay",
         "kind": 6,
         "importPath": "overlays",
@@ -321,6 +329,15 @@
         "documentation": {}
     },
     {
+        "label": "Worker",
+        "kind": 6,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "class Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt\n    def run(self):\n        try:",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
         "label": "promptSmart",
         "kind": 2,
         "importPath": "prompting",
@@ -334,7 +351,7 @@
         "kind": 2,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "def prompt(message: str, model: MODELS = \"gpt-4o\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (MODELS, optional): the AI bot model to use for this conversation. Defaults to \"gpt-4o\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error\n    \"\"\"",
+        "peekOfCode": "def prompt(message: str, model: BASIC_MODELS = \"gpt-4o\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (MODELS, optional): the AI bot model to use for this conversation. Defaults to \"gpt-4o\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error\n    \"\"\"",
         "detail": "prompting",
         "documentation": {}
     },
@@ -343,7 +360,7 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "BOT_URL = \"https://clave-app.onrender.com/api/ischat\"\napi_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.",
+        "peekOfCode": "BOT_URL = \"https://clave-app.onrender.com/api/ischat\"\napi_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent",
         "detail": "prompting",
         "documentation": {}
     },
@@ -352,16 +369,7 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "api_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:",
-        "detail": "prompting",
-        "documentation": {}
-    },
-    {
-        "label": "SMART_MODELS",
-        "kind": 5,
-        "importPath": "prompting",
-        "description": "prompting",
-        "peekOfCode": "SMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API",
+        "peekOfCode": "api_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message",
         "detail": "prompting",
         "documentation": {}
     },
@@ -370,7 +378,25 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error",
+        "peekOfCode": "MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "SMART_MODELS",
+        "kind": 5,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "SMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "BASIC_MODELS",
+        "kind": 5,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "BASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt\n    def run(self):",
         "detail": "prompting",
         "documentation": {}
     },
@@ -390,24 +416,6 @@
         "description": "query",
         "peekOfCode": "headers = {\n    \"User-Agent\": \"Mozilla/5.0\"\n}\ndef getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = {}\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class",
         "detail": "query",
-        "documentation": {}
-    },
-    {
-        "label": "Worker",
-        "kind": 6,
-        "importPath": "test2",
-        "description": "test2",
-        "peekOfCode": "class Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.URL = \"https://clave-app.onrender.com/api/ischat\"\n        self.headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\n    def run(self):\n        try:",
-        "detail": "test2",
-        "documentation": {}
-    },
-    {
-        "label": "MainWindow",
-        "kind": 6,
-        "importPath": "test2",
-        "description": "test2",
-        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        central = QtWidgets.QWidget()\n        self.setCentralWidget(central)",
-        "detail": "test2",
         "documentation": {}
     }
 ]
