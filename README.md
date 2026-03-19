@@ -8,7 +8,7 @@ a (mosty) open source AI assistant library that is both a tool and a helper
 * [ ] audio bytes recognition
 * [ ] togglable voice recognition
 * [ ] text-to-speech (with custom voice support)
-* [ ] offline web search pull up
+* [ ] web search pull up
 * [ ] safe file searcher
 * [ ] style customizing
 * [ ] offline support (maybe)
