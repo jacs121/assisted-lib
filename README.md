@@ -7,7 +7,7 @@ a (mosty) open source AI assistant library that is both a tool and a helper
 * [ ] image pixels recognition
 * [ ] audio bytes recognition
 * [ ] togglable voice recognition
-* [ ] text-to-speech (with custom model support)
+* [ ] text-to-speech (with custom voice support)
 * [ ] offline web search pull up
 * [ ] safe file searcher
 * [ ] style customizing
