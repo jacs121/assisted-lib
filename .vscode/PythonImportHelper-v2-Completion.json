@@ -1,0 +1,413 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "typing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "typing",
+        "description": "typing",
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "wave",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wave",
+        "description": "wave",
+        "detail": "wave",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PySide6",
+        "description": "PySide6",
+        "isExtraImport": true,
+        "detail": "PySide6",
+        "documentation": {}
+    },
+    {
+        "label": "QThread",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QBuffer",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QByteArray",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QIODevice",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QAudioFormat",
+        "importPath": "PySide6.QtMultimedia",
+        "description": "PySide6.QtMultimedia",
+        "isExtraImport": true,
+        "detail": "PySide6.QtMultimedia",
+        "documentation": {}
+    },
+    {
+        "label": "QAudioOutput",
+        "importPath": "PySide6.QtMultimedia",
+        "description": "PySide6.QtMultimedia",
+        "isExtraImport": true,
+        "detail": "PySide6.QtMultimedia",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "BasicOverlay",
+        "kind": 6,
+        "importPath": "overlays",
+        "description": "overlays",
+        "peekOfCode": "class BasicOverlay(tk.Tk):\n    \"\"\"a basic jarvisBot window as an overlay\"\"\"\n    def __init__(self):\n        \"\"\"initiate a basic jarvisBot window as an overlay\"\"\"\n        super().__init__(\"jarvisBot\", \"jarvisBot\") # initiate the window it self\n        self.overrideredirect(True) # remove window in the app bar and remove the top bar from the window \n        self.wm_attributes(\"-topmost\", 1) # force the window to stay on top\n        # make any completely black pixels transparent or if it fails set alpha to 0.7\n        try:\n            self.attributes(\"-transparentcolor\", \"#000000\")",
+        "detail": "overlays",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOverlay",
+        "kind": 6,
+        "importPath": "overlays",
+        "description": "overlays",
+        "peekOfCode": "class ImageOverlay(BasicOverlay):\n    \"\"\"an image display overlay\"\"\"\n    def __init__(self, image: Image.Image, scale: int = 100):\n        \"\"\"initiate an image display overlay\"\"\"\n        self.scale = scale\n        super().__init__()\n        self.resizable(False, False)\n        data = np.array(image) # convert to a matrix\n        # extract each channel\n        red = data[..., 0]",
+        "detail": "overlays",
+        "documentation": {}
+    },
+    {
+        "label": "promptSmart",
+        "kind": 2,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "def promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error\n    \"\"\"",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 2,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "def prompt(message: str, model: MODELS = \"gpt-4o\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (MODELS, optional): the AI bot model to use for this conversation. Defaults to \"gpt-4o\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error\n    \"\"\"",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_URL",
+        "kind": 5,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "BOT_URL = \"https://clave-app.onrender.com/api/ischat\"\napi_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "api_headers",
+        "kind": 5,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "api_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "SMART_MODELS",
+        "kind": 5,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "SMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "MODELS",
+        "kind": 5,
+        "importPath": "prompting",
+        "description": "prompting",
+        "peekOfCode": "MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\ndef promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error",
+        "detail": "prompting",
+        "documentation": {}
+    },
+    {
+        "label": "getQueryImage",
+        "kind": 2,
+        "importPath": "query",
+        "description": "query",
+        "peekOfCode": "def getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = {}\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class\n    soup = BeautifulSoup(response.text, \"html.parser\")\n    # loop over all image thumbnail elements\n    for a in soup.find_all(\"a\", class_=\"iusc\"):",
+        "detail": "query",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "query",
+        "description": "query",
+        "peekOfCode": "headers = {\n    \"User-Agent\": \"Mozilla/5.0\"\n}\ndef getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = {}\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class",
+        "detail": "query",
+        "documentation": {}
+    },
+    {
+        "label": "Worker",
+        "kind": 6,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "class Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.URL = \"https://clave-app.onrender.com/api/ischat\"\n        self.headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\n    def run(self):\n        try:",
+        "detail": "test2",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        central = QtWidgets.QWidget()\n        self.setCentralWidget(central)",
+        "detail": "test2",
+        "documentation": {}
+    }
+]
