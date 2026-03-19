@@ -1,8 +1,11 @@
 import wave
 import os
 import prompting
+import overlays
+import query
 from gtts import gTTS
 import tempfile
+import shlex
 
 from PySide6 import QtWidgets
 from PySide6.QtCore import QBuffer, QByteArray, QIODevice
@@ -18,6 +21,9 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.currentSender = "user"
         self.history = []
+        
+        # create instructions for the AI, with information about system commands 
+        self.systemPrompt = ""
 
         central = QtWidgets.QWidget()
         self.setCentralWidget(central)
@@ -149,22 +155,22 @@ class MainWindow(QtWidgets.QMainWindow):
             self.currentSender = "genia"
             self.display_messages.setText(self.get_messages(self.currentSender)+"\nthinking...")
 
-            message = ""
-
-            self.worker = prompting.Worker(self, message)
+            self.worker = prompting.Worker(self, message, systemPrompt=self.systemPrompt)
             self.worker.finished.connect(self.receivedMessage)
             self.worker.start()
 
     def receivedMessage(self, text: str):
         try:
             if text:
-                self.add_message(text, self.currentSender)
-
-                # Split text into chunks suitable for SAM
-                chunks = self.chunk_text(text)
-                if chunks:
-                    # Play all chunks seamlessly
-                    self.play_combined_chunks(chunks)
+                for msg in text.splitlines():
+                    if msg.startswith("/"):
+                        command = msg[1:].split(" ")[0]
+                        args = shlex.split(msg[1:])
+                    else:
+                        # add message to chat
+                        self.add_message(text, self.currentSender)
+                        # play text-to-speech of the message
+                        self.play_combined_chunks(text)
             else:
                 self.history[-1] = {"user": "ERROR", "msg": text}
 

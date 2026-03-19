@@ -1,0 +1,22 @@
+{
+    "commands": {
+        "imgQuery": {
+            "package": "query",
+            "function": "getQueryImage",
+            "kwargs": {
+                "query": {
+                    "description": "what images to for search",
+                    "type": "string",
+                    "index": 1,
+                    "default": "required"
+                },
+                "limit": {
+                    "description": " how many images to stop at",
+                    "type": "integer",
+                    "index": 2,
+                    "default": 1
+                }
+            }
+        }
+    }
+}

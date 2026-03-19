@@ -62,6 +62,24 @@
         "documentation": {}
     },
     {
+        "label": "overlays",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "overlays",
+        "description": "overlays",
+        "detail": "overlays",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "query",
+        "description": "query",
+        "detail": "query",
+        "documentation": {}
+    },
+    {
         "label": "gTTS",
         "importPath": "gtts",
         "description": "gtts",
@@ -76,6 +94,15 @@
         "importPath": "tempfile",
         "description": "tempfile",
         "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "shlex",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shlex",
+        "description": "shlex",
+        "detail": "shlex",
         "documentation": {}
     },
     {
@@ -306,7 +333,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        central = QtWidgets.QWidget()\n        self.setCentralWidget(central)",
+        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        # create instructions for the AI, with information about system commands \n        self.systemPrompt = \"\"",
         "detail": "main",
         "documentation": {}
     },
