@@ -229,54 +229,6 @@
         "documentation": {}
     },
     {
-        "label": "lex",
-        "importPath": "pygments",
-        "description": "pygments",
-        "isExtraImport": true,
-        "detail": "pygments",
-        "documentation": {}
-    },
-    {
-        "label": "lex",
-        "importPath": "pygments",
-        "description": "pygments",
-        "isExtraImport": true,
-        "detail": "pygments",
-        "documentation": {}
-    },
-    {
-        "label": "get_lexer_by_name",
-        "importPath": "pygments.lexers",
-        "description": "pygments.lexers",
-        "isExtraImport": true,
-        "detail": "pygments.lexers",
-        "documentation": {}
-    },
-    {
-        "label": "get_lexer_by_name",
-        "importPath": "pygments.lexers",
-        "description": "pygments.lexers",
-        "isExtraImport": true,
-        "detail": "pygments.lexers",
-        "documentation": {}
-    },
-    {
-        "label": "Token",
-        "importPath": "pygments.token",
-        "description": "pygments.token",
-        "isExtraImport": true,
-        "detail": "pygments.token",
-        "documentation": {}
-    },
-    {
-        "label": "Token",
-        "importPath": "pygments.token",
-        "description": "pygments.token",
-        "isExtraImport": true,
-        "detail": "pygments.token",
-        "documentation": {}
-    },
-    {
         "label": "imageio",
         "kind": 6,
         "isExtraImport": true,
@@ -318,6 +270,30 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "lex",
+        "importPath": "pygments",
+        "description": "pygments",
+        "isExtraImport": true,
+        "detail": "pygments",
+        "documentation": {}
+    },
+    {
+        "label": "get_lexer_by_name",
+        "importPath": "pygments.lexers",
+        "description": "pygments.lexers",
+        "isExtraImport": true,
+        "detail": "pygments.lexers",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "pygments.token",
+        "description": "pygments.token",
+        "isExtraImport": true,
+        "detail": "pygments.token",
         "documentation": {}
     },
     {
@@ -424,7 +400,7 @@
         "kind": 6,
         "importPath": "overlays",
         "description": "overlays",
-        "peekOfCode": "class TextOverlay(BasicOverlay):\n    \"\"\"a text label window as an overlay\"\"\"\n    def __init__(self, text: str | list[str]):\n        \"\"\"initiate a text label window as an overlay\"\"\"\n        super().__init__()\n        self.text = text if isinstance(text, str) else \"\\n\".join(text)\n    def createUI(self):\n        \"\"\"create all of the UI elements for the overlay\"\"\"\n        # just a example label\n        label = tk.Label(self, text=self.text, fg=\"white\", font=(\"TkDefaultFont\", 16), bg=self.transparentColor)",
+        "peekOfCode": "class TextOverlay(BasicOverlay):\n    \"\"\"a text label window as an overlay\"\"\"\n    def __init__(self, text: str | list[str]):\n        \"\"\"initiate a text label window as an overlay\"\"\"\n        self.text = text if isinstance(text, str) else \"\\n\".join(text)\n        super().__init__()\n    def createUI(self):\n        \"\"\"create all of the UI elements for the overlay\"\"\"\n        # just a example label\n        label = tk.Label(self, text=self.text, fg=\"white\", font=(\"TkDefaultFont\", 16), bg=\"#000000\")",
         "detail": "overlays",
         "documentation": {}
     },
@@ -433,7 +409,7 @@
         "kind": 6,
         "importPath": "overlays",
         "description": "overlays",
-        "peekOfCode": "class ImageOverlay(BasicOverlay):\n    \"\"\"an image display overlay\"\"\"\n    def __init__(self, image: Image.Image, scale: int = 100):\n        \"\"\"initiate an image display overlay\"\"\"\n        self.scale = scale\n        super().__init__()\n        self.resizable(False, False)\n        data = np.array(image) # convert to a matrix\n        # extract each channel\n        red = data[..., 0]",
+        "peekOfCode": "class ImageOverlay(BasicOverlay):\n    \"\"\"an image display overlay\"\"\"\n    def __init__(self, image: Image.Image | str, scale: int = 100):\n        \"\"\"initiate an image display overlay\"\"\"\n        self.scale = scale\n        if isinstance(image, str):\n            image = Image.open(image)\n        data = np.array(image) # convert to a matrix\n        # extract each channel\n        red = data[..., 0]",
         "detail": "overlays",
         "documentation": {}
     },
@@ -442,7 +418,7 @@
         "kind": 6,
         "importPath": "overlays",
         "description": "overlays",
-        "peekOfCode": "class VideoOverlay(BasicOverlay):\n    def __init__(self, video: bytes | str, scale = 100):\n        if isinstance(video, bytes):\n            self.video = video\n            with tempfile.NamedTemporaryFile(delete=True, suffix=\".mp4\") as f:\n                f.write(video)\n                f.flush()\n                f.close()\n                self.reader = imageio.get_reader(f.name)\n        else:",
+        "peekOfCode": "class VideoOverlay(BasicOverlay):\n    def __init__(self, video: bytes | str, scale=100):\n        self._temp_path = None\n        if isinstance(video, bytes):\n            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=\".mp4\")\n            tmp.write(video)\n            tmp.close()\n            self._temp_path = tmp.name\n            self.reader = imageio.get_reader(tmp.name, format=\"ffmpeg\")\n        else:",
         "detail": "overlays",
         "documentation": {}
     },
@@ -451,7 +427,7 @@
         "kind": 2,
         "importPath": "overlays",
         "description": "overlays",
-        "peekOfCode": "def createOverlay(overlayType: typing.Literal[\"img\", \"txt\", \"vid\", \"audio\"], position: tuple[int, int] = None, *args, **kwargs):\n    if overlayType == \"img\":\n        overlay = ImageOverlay(*args, **kwargs)\n    elif overlayType == \"txt\":\n        overlay = TextOverlay(*args, **kwargs)\n    elif overlayType == \"vid\":\n        overlay = VideoOverlay(*args, **kwargs)\n    overlay.show(position)\n    return overlay\ncreateOverlay(\"vid\", None, \"test.mp4\")",
+        "peekOfCode": "def createOverlay(overlayType: typing.Literal[\"img\", \"txt\", \"vid\", \"audio\"], position: tuple[int, int] = None, *args, **kwargs):\n    if overlayType == \"img\":\n        overlay = ImageOverlay(*args, **kwargs)\n    elif overlayType == \"txt\":\n        overlay = TextOverlay(*args, **kwargs)\n    elif overlayType == \"vid\":\n        overlay = VideoOverlay(*args, **kwargs)\n    overlay.show(position)\n    return overlay",
         "detail": "overlays",
         "documentation": {}
     },
