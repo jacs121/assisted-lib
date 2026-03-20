@@ -1,6 +1,14 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 import numpy as np
+import typing
+from pygments import lex
+from pygments.lexers import get_lexer_by_name
+from pygments.token import Token
+import tkinter as tk
+from PIL import Image, ImageTk
+import imageio
+import tempfile
 
 class BasicOverlay(tk.Tk):
     """a basic jarvisBot window as an overlay"""
@@ -16,6 +24,7 @@ class BasicOverlay(tk.Tk):
             self.config(bg="#000000")
         except tk.TclError:
             self.attributes("-alpha", 0.7)
+        self.createUI()
 
     def createUI(self):
         """create all of the UI elements for the overlay"""
@@ -30,8 +39,20 @@ class BasicOverlay(tk.Tk):
             self.geometry(f"+{position[0]}+{position[1]}")
         
         # run the functions to show the overlay and the elements inside it
-        self.createUI()
         self.mainloop()
+
+class TextOverlay(BasicOverlay):
+    """a text label window as an overlay"""
+    def __init__(self, text: str | list[str]):
+        """initiate a text label window as an overlay"""
+        super().__init__()
+        self.text = text if isinstance(text, str) else "\n".join(text)
+
+    def createUI(self):
+        """create all of the UI elements for the overlay"""
+        # just a example label
+        label = tk.Label(self, text=self.text, fg="white", font=("TkDefaultFont", 16), bg=self.transparentColor)
+        label.pack(pady=20)
 
 class ImageOverlay(BasicOverlay):
     """an image display overlay"""
@@ -67,20 +88,95 @@ class ImageOverlay(BasicOverlay):
         # Keep a reference to the image object
         self.__image_label__.image = self.__tk_image__
 
-    def updateImage(self, image: Image.Image):
-        data = np.array(image) # convert to a matrix
+class VideoOverlay(BasicOverlay):
+    def __init__(self, video: bytes | str, scale = 100):
+        
+        if isinstance(video, bytes):
+            self.video = video
+            with tempfile.NamedTemporaryFile(delete=True, suffix=".mp4") as f:
+                f.write(video)
+                f.flush()
+                f.close()
+                self.reader = imageio.get_reader(f.name)
+        else:
+            self.reader = imageio.get_reader(video)
 
+        self.fps = self.reader.get_meta_data()['fps']
+        
+        self.current_frame = 0
+        self.playing = True
+        self.scale = scale
+        
+        super().__init__()
+        
+        # set the window size
+        self.start_frame = Image.fromarray(self.reader.get_data(0))
+        ratio = self.start_frame.width/self.start_frame.height
+        self.geometry(f"{self.scale}x{int(ratio*self.scale)}")
+
+    def createUI(self):
+
+        self.label = tk.Label(self)
+        self.label.pack()
+
+        # Buttons
+        controls = tk.Frame(self)
+        controls.pack()
+
+        tk.Button(controls, text="Play/Pause", command=self.toggle_play).pack(side="left")
+        tk.Button(controls, text="-5s", command=self.skip_backward).pack(side="left")
+        tk.Button(controls, text="+5s", command=self.skip_forward).pack(side="left")
+
+    def show_frame(self, index):
+        frame = self.reader.get_data(index)
         # extract each channel
-        red = data[..., 0]
-        green = data[..., 1]
-        blue = data[..., 2]
+        red = frame[..., 0]
+        green = frame[..., 1]
+        blue = frame[..., 2]
         
         # shift the blue channel of the image's pixels if ir's in the transparent zone
-        data[(red == 0) & (green == 0) & (blue == 0)] = (0, 0, 1)
+        frame[(red == 0) & (green == 0) & (blue == 0)] = (0, 0, 1)
 
-        self.image = Image.fromarray(data) # convert back into PIL
-        
-        # update the image and window size
-        self.__tk_image__.paste(self.image)
-        ratio = self.image.width/self.image.height
-        self.geometry(f"{self.scale}x{int(ratio*self.scale)}")
+        img = Image.fromarray(frame)
+        imgtk = ImageTk.PhotoImage(img)
+
+        self.label.imgtk = imgtk
+        self.label.config(image=imgtk)
+
+    def update(self):
+        if playing:
+            self.current_frame = (self.current_frame + 1) % self.reader.get_length()
+            self.show_frame(self.current_frame)
+
+        self.after(int(1000 / self.fps), self.update)
+
+    # Controls
+    def toggle_play(self):
+        global playing
+        playing = not playing
+
+    def skip_forward(self):
+        current_frame = min(current_frame + int(self.fps * 5), self.reader.get_length() - 1)  # +5 sec
+        self.show_frame(current_frame)
+
+    def skip_backward(self):
+        current_frame = max(current_frame - int(self.fps * 5), 0)  # -5 sec
+        self.show_frame(current_frame)
+
+    def show(self, position = None):
+        self.show_frame(self.current_frame)
+        self.update()
+        return super().show(position)
+
+def createOverlay(overlayType: typing.Literal["img", "txt", "vid", "audio"], position: tuple[int, int] = None, *args, **kwargs):
+    if overlayType == "img":
+        overlay = ImageOverlay(*args, **kwargs)
+    elif overlayType == "txt":
+        overlay = TextOverlay(*args, **kwargs)
+    elif overlayType == "vid":
+        overlay = VideoOverlay(*args, **kwargs)
+    
+    overlay.show(position)
+    return overlay
+
+createOverlay("vid", None, "test.mp4")

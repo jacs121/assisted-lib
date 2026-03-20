@@ -3,10 +3,11 @@
         "imgQuery": {
             "package": "query",
             "function": "getQueryImage",
+            "description": "search for images on the internet",
             "kwargs": {
                 "query": {
                     "description": "what images to for search",
-                    "type": "string",
+                    "type": "string|storage",
                     "index": 1,
                     "default": "required"
                 },
@@ -17,6 +18,10 @@
                     "default": 1
                 }
             }
+        },
+        "overlay": {
+            "package": "overlay",
+            "function": ""
         }
     }
 }
