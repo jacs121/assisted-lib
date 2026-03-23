@@ -6,14 +6,14 @@ from PySide6.QtCore import QThread, Signal
 BOT_URL = "https://clave-app.onrender.com/api/ischat"
 api_headers = {"Content-Type": "application/json", "x-session-id": uuid.uuid4().hex}
 
-MODELS = typing.Literal["gpt-4o", "gpt-3.5", "grok-3-mini", "grok-4-fast-reasoning", "gpt-oss-120b"]
-SMART_MODELS = typing.Literal["grok-3-mini", "grok-4-fast-reasoning", "gpt-oss-120b"]
+MODELS = typing.Literal["gpt-4o", "gpt-3.5", "gpt-oss-120b"]
+SMART_MODELS = typing.Literal["gpt-oss-120b",]
 BASIC_MODELS = typing.Literal["gpt-4o", "gpt-3.5"]
 
 class Worker(QThread):
-    finished = Signal(str)
+    finished = Signal(str, bool)
 
-    def __init__(self, parent, message: str, model: MODELS = "grok-4-fast-reasoning", systemPrompt: str = ""):
+    def __init__(self, parent, message: str, model: MODELS = "gpt-oss-120b", systemPrompt: str = ""):
         super().__init__()
         self.parent = parent
         self.message = message
@@ -26,17 +26,17 @@ class Worker(QThread):
                 out = prompt(self.message, self.model, self.systemPrompt)
             else:
                 out = promptSmart(self.message, self.model, self.systemPrompt)
-            self.finished.emit(out)
+            self.finished.emit(*out)
 
         except Exception as e:
             self.finished.emit(f"[ERROR] {str(e).upper()}")
 
-def promptSmart(message: str, model: SMART_MODELS = "grok-4-fast-reasoning", systemPrompt: str = "") -> tuple[str, bool]:
+def promptSmart(message: str, model: SMART_MODELS = "gpt-oss-120b", systemPrompt: str = "") -> tuple[str, bool]:
     """sends a prompt to the AI bot
 
     Args:
         message (str): the user's input message
-        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to "grok-4-fast-reasoning".
+        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults t.
         systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.
 
     Returns:

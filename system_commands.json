@@ -1,27 +1,71 @@
 {
     "commands": {
         "imgQuery": {
-            "package": "query",
-            "function": "getQueryImage",
-            "description": "search for images on the internet",
-            "kwargs": {
-                "query": {
+            "module": "query",
+            "func": "getQueryImage",
+            "description": "search for images on the internet and store it",
+            "args": [
+                {
                     "description": "what images to for search",
-                    "type": "string|storage",
-                    "index": 1,
+                    "type": "string",
                     "default": "required"
                 },
-                "limit": {
-                    "description": " how many images to stop at",
+                {
+                    "description": "how many images to stop at",
                     "type": "integer",
-                    "index": 2,
                     "default": 1
                 }
-            }
+            ],
+            "results": "a list holding the images data unless it's one image which then it give that one image"
         },
-        "overlay": {
-            "package": "overlay",
-            "function": ""
+        "showTxt": {
+            "module": "overlay",
+            "func": "createTxtOverlay",
+            "description": "create an text overlay on the user's screen",
+            "args": [
+                {
+                    "description": "the text string to show",
+                    "type": "string",
+                    "default": "required"
+                }
+            ],
+            "results": "none"
+        },
+        "showImg": {
+            "module": "overlay",
+            "func": "createImgOverlay",
+            "description": "create an image overlay on the user's screen",
+            "args": [
+                {
+                    "description": "location of the image",
+                    "type": "storageLocation",
+                    "default": "required"
+                },
+                {
+                    "description": "what should be the size of the image in screen pixels space",
+                    "type": "float",
+                    "default": "required"
+                }
+            ],
+            "results": "none"
+        },
+        "showVid": {
+            "module": "overlay",
+            "func": "createVidOverlay",
+            "description": "create an video overlay on the user's screen",
+            "args": [
+                {
+                    "description": "location of the video",
+                    "type": "storageLocation",
+                    "default": "required"
+                },
+                {
+                    "description": "what should be the size of the video in screen pixels space",
+                    "type": "float",
+                    "default": "required"
+                }
+            ],
+            "results": "none"
         }
     }
 }

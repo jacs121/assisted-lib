@@ -1,4 +1,7 @@
 import requests
+from PIL import Image
+import io
+import numpy as np
 from bs4 import BeautifulSoup
 import json
 
@@ -9,7 +12,7 @@ headers = {
 def getQueryImage(query: str, limit: int = 1):
     seen = set()
     index = 0
-    results = {}
+    results = []
     
     # get image page data from url as a string
     response = requests.get(f"https://www.bing.com/images/search?q={query}", headers=headers)
@@ -42,15 +45,13 @@ def getQueryImage(query: str, limit: int = 1):
                 response = requests.get(murl, headers=headers, stream=True)
                 response.raise_for_status()
 
-                # guess extension (fallback to jpg)
-                ext = murl.split(".")[-1].split("?")[0]
-                if len(ext) > 5:
-                    ext = "jpg"
+                # Open the image using Pillow
+                img = Image.open(io.BytesIO(response.content))
 
                 # add data to result
-                results.update({f"{query}{index}.{ext}": response.content})
+                results.append(np.array(img))
                 index += 1
 
         except Exception as e:
             print(f"Failed {murl}: {e}")
-    return results
+    return results if limit > 1 else results[0]

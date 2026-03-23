@@ -44,6 +44,126 @@
         "documentation": {}
     },
     {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "typing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "typing",
+        "description": "typing",
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "imageio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "imageio",
+        "description": "imageio",
+        "detail": "imageio",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "wave",
         "kind": 6,
         "isExtraImport": true,
@@ -62,38 +182,11 @@
         "documentation": {}
     },
     {
-        "label": "overlays",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "overlays",
-        "description": "overlays",
-        "detail": "overlays",
-        "documentation": {}
-    },
-    {
-        "label": "query",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "query",
-        "description": "query",
-        "detail": "query",
-        "documentation": {}
-    },
-    {
         "label": "gTTS",
         "importPath": "gtts",
         "description": "gtts",
         "isExtraImport": true,
         "detail": "gtts",
-        "documentation": {}
-    },
-    {
-        "label": "tempfile",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tempfile",
-        "description": "tempfile",
-        "detail": "tempfile",
         "documentation": {}
     },
     {
@@ -103,6 +196,15 @@
         "importPath": "shlex",
         "description": "shlex",
         "detail": "shlex",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
         "documentation": {}
     },
     {
@@ -170,80 +272,12 @@
         "documentation": {}
     },
     {
-        "label": "tkinter",
+        "label": "importlib.util",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "Image",
-        "importPath": "PIL",
-        "description": "PIL",
-        "isExtraImport": true,
-        "detail": "PIL",
-        "documentation": {}
-    },
-    {
-        "label": "ImageTk",
-        "importPath": "PIL",
-        "description": "PIL",
-        "isExtraImport": true,
-        "detail": "PIL",
-        "documentation": {}
-    },
-    {
-        "label": "Image",
-        "importPath": "PIL",
-        "description": "PIL",
-        "isExtraImport": true,
-        "detail": "PIL",
-        "documentation": {}
-    },
-    {
-        "label": "ImageTk",
-        "importPath": "PIL",
-        "description": "PIL",
-        "isExtraImport": true,
-        "detail": "PIL",
-        "documentation": {}
-    },
-    {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "typing",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "typing",
-        "description": "typing",
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "imageio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "imageio",
-        "description": "imageio",
-        "detail": "imageio",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "importPath": "importlib.util",
+        "description": "importlib.util",
+        "detail": "importlib.util",
         "documentation": {}
     },
     {
@@ -253,23 +287,6 @@
         "importPath": "uuid",
         "description": "uuid",
         "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "BeautifulSoup",
-        "importPath": "bs4",
-        "description": "bs4",
-        "isExtraImport": true,
-        "detail": "bs4",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -378,57 +395,111 @@
         "documentation": {}
     },
     {
-        "label": "MainWindow",
-        "kind": 6,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        # create instructions for the AI, with information about system commands \n        self.systemPrompt = \"\"",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
         "label": "BasicOverlay",
         "kind": 6,
-        "importPath": "overlays",
-        "description": "overlays",
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
         "peekOfCode": "class BasicOverlay(tk.Tk):\n    \"\"\"a basic jarvisBot window as an overlay\"\"\"\n    def __init__(self):\n        \"\"\"initiate a basic jarvisBot window as an overlay\"\"\"\n        super().__init__(\"jarvisBot\", \"jarvisBot\") # initiate the window it self\n        self.overrideredirect(True) # remove window in the app bar and remove the top bar from the window \n        self.wm_attributes(\"-topmost\", 1) # force the window to stay on top\n        # make any completely black pixels transparent or if it fails set alpha to 0.7\n        try:\n            self.attributes(\"-transparentcolor\", \"#000000\")",
-        "detail": "overlays",
+        "detail": "modules.overlay",
         "documentation": {}
     },
     {
         "label": "TextOverlay",
         "kind": 6,
-        "importPath": "overlays",
-        "description": "overlays",
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
         "peekOfCode": "class TextOverlay(BasicOverlay):\n    \"\"\"a text label window as an overlay\"\"\"\n    def __init__(self, text: str | list[str]):\n        \"\"\"initiate a text label window as an overlay\"\"\"\n        self.text = text if isinstance(text, str) else \"\\n\".join(text)\n        super().__init__()\n    def createUI(self):\n        \"\"\"create all of the UI elements for the overlay\"\"\"\n        # just a example label\n        label = tk.Label(self, text=self.text, fg=\"white\", font=(\"TkDefaultFont\", 16), bg=\"#000000\")",
-        "detail": "overlays",
+        "detail": "modules.overlay",
         "documentation": {}
     },
     {
         "label": "ImageOverlay",
         "kind": 6,
-        "importPath": "overlays",
-        "description": "overlays",
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
         "peekOfCode": "class ImageOverlay(BasicOverlay):\n    \"\"\"an image display overlay\"\"\"\n    def __init__(self, image: Image.Image | str, scale: int = 100):\n        \"\"\"initiate an image display overlay\"\"\"\n        self.scale = scale\n        if isinstance(image, str):\n            image = Image.open(image)\n        data = np.array(image) # convert to a matrix\n        # extract each channel\n        red = data[..., 0]",
-        "detail": "overlays",
+        "detail": "modules.overlay",
         "documentation": {}
     },
     {
         "label": "VideoOverlay",
         "kind": 6,
-        "importPath": "overlays",
-        "description": "overlays",
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
         "peekOfCode": "class VideoOverlay(BasicOverlay):\n    def __init__(self, video: bytes | str, scale=100):\n        self._temp_path = None\n        if isinstance(video, bytes):\n            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=\".mp4\")\n            tmp.write(video)\n            tmp.close()\n            self._temp_path = tmp.name\n            self.reader = imageio.get_reader(tmp.name, format=\"ffmpeg\")\n        else:",
-        "detail": "overlays",
+        "detail": "modules.overlay",
         "documentation": {}
     },
     {
         "label": "createOverlay",
         "kind": 2,
-        "importPath": "overlays",
-        "description": "overlays",
-        "peekOfCode": "def createOverlay(overlayType: typing.Literal[\"img\", \"txt\", \"vid\", \"audio\"], position: tuple[int, int] = None, *args, **kwargs):\n    if overlayType == \"img\":\n        overlay = ImageOverlay(*args, **kwargs)\n    elif overlayType == \"txt\":\n        overlay = TextOverlay(*args, **kwargs)\n    elif overlayType == \"vid\":\n        overlay = VideoOverlay(*args, **kwargs)\n    overlay.show(position)\n    return overlay",
-        "detail": "overlays",
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
+        "peekOfCode": "def createOverlay(overlayType: typing.Literal[\"img\", \"txt\", \"vid\"], position: tuple[int, int] = None, *args, **kwargs):\n    if overlayType == \"img\":\n        overlay = ImageOverlay(*args, **kwargs)\n    elif overlayType == \"txt\":\n        overlay = TextOverlay(*args, **kwargs)\n    elif overlayType == \"vid\":\n        overlay = VideoOverlay(*args, **kwargs)\n    overlay.show(position)\n    return overlay\ncreateTxtOverlay = lambda txt: createOverlay(\"txt\", None, txt)",
+        "detail": "modules.overlay",
+        "documentation": {}
+    },
+    {
+        "label": "createTxtOverlay",
+        "kind": 5,
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
+        "peekOfCode": "createTxtOverlay = lambda txt: createOverlay(\"txt\", None, txt)\ncreateImgOverlay = lambda img, scale: createOverlay(\"img\", None, img, scale)\ncreateVidOverlay = lambda vid, scale: createOverlay(\"vid\", None, vid, scale)",
+        "detail": "modules.overlay",
+        "documentation": {}
+    },
+    {
+        "label": "createImgOverlay",
+        "kind": 5,
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
+        "peekOfCode": "createImgOverlay = lambda img, scale: createOverlay(\"img\", None, img, scale)\ncreateVidOverlay = lambda vid, scale: createOverlay(\"vid\", None, vid, scale)",
+        "detail": "modules.overlay",
+        "documentation": {}
+    },
+    {
+        "label": "createVidOverlay",
+        "kind": 5,
+        "importPath": "modules.overlay",
+        "description": "modules.overlay",
+        "peekOfCode": "createVidOverlay = lambda vid, scale: createOverlay(\"vid\", None, vid, scale)",
+        "detail": "modules.overlay",
+        "documentation": {}
+    },
+    {
+        "label": "getQueryImage",
+        "kind": 2,
+        "importPath": "modules.query",
+        "description": "modules.query",
+        "peekOfCode": "def getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = []\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class\n    soup = BeautifulSoup(response.text, \"html.parser\")\n    # loop over all image thumbnail elements\n    for a in soup.find_all(\"a\", class_=\"iusc\"):",
+        "detail": "modules.query",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "modules.query",
+        "description": "modules.query",
+        "peekOfCode": "headers = {\n    \"User-Agent\": \"Mozilla/5.0\"\n}\ndef getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = []\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class",
+        "detail": "modules.query",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MainWindow(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setGeometry(0, 0, 750, 500)\n        self.audio = None\n        self.buffer = None\n        self.currentSender = \"user\"\n        self.history = []\n        self.internalStorage = {}\n        # create instructions for the AI, with information about system commands ",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "modules",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "modules = {}\nif __name__ == \"__main__\":\n    config = json.load(open(\"./system_commands.json\", \"r\"))\n    for commandName, command in config[\"commands\"].items():\n        moduleName = command[\"module\"]\n        if moduleName in modules.keys():\n            continue\n        path = os.path.join(\"modules\", moduleName + \".py\")\n        if not os.path.exists(path):\n            print(f\"Module file not found: {path}\")",
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -436,7 +507,7 @@
         "kind": 6,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "class Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt\n    def run(self):\n        try:",
+        "peekOfCode": "class Worker(QThread):\n    finished = Signal(str, bool)\n    def __init__(self, parent, message: str, model: MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt\n    def run(self):\n        try:",
         "detail": "prompting",
         "documentation": {}
     },
@@ -445,7 +516,7 @@
         "kind": 2,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "def promptSmart(message: str, model: SMART_MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults to \"grok-4-fast-reasoning\".\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error\n    \"\"\"",
+        "peekOfCode": "def promptSmart(message: str, model: SMART_MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\") -> tuple[str, bool]:\n    \"\"\"sends a prompt to the AI bot\n    Args:\n        message (str): the user's input message\n        model (SMART_MODELS, optional): the AI bot model to use for this conversation. Defaults t.\n        systemPrompt (str, optional): a global prompts describing how should the AI act. Defaults to empty.\n    Returns:\n        str: the response from the API\n        bool: if the API sent a message or an error\n    \"\"\"",
         "detail": "prompting",
         "documentation": {}
     },
@@ -463,7 +534,7 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "BOT_URL = \"https://clave-app.onrender.com/api/ischat\"\napi_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent",
+        "peekOfCode": "BOT_URL = \"https://clave-app.onrender.com/api/ischat\"\napi_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"gpt-oss-120b\",]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str, bool)\n    def __init__(self, parent, message: str, model: MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent",
         "detail": "prompting",
         "documentation": {}
     },
@@ -472,7 +543,7 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "api_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message",
+        "peekOfCode": "api_headers = {\"Content-Type\": \"application/json\", \"x-session-id\": uuid.uuid4().hex}\nMODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"gpt-oss-120b\",]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str, bool)\n    def __init__(self, parent, message: str, model: MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message",
         "detail": "prompting",
         "documentation": {}
     },
@@ -481,7 +552,7 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model",
+        "peekOfCode": "MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\", \"gpt-oss-120b\"]\nSMART_MODELS = typing.Literal[\"gpt-oss-120b\",]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str, bool)\n    def __init__(self, parent, message: str, model: MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model",
         "detail": "prompting",
         "documentation": {}
     },
@@ -490,7 +561,7 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "SMART_MODELS = typing.Literal[\"grok-3-mini\", \"grok-4-fast-reasoning\", \"gpt-oss-120b\"]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt",
+        "peekOfCode": "SMART_MODELS = typing.Literal[\"gpt-oss-120b\",]\nBASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str, bool)\n    def __init__(self, parent, message: str, model: MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt",
         "detail": "prompting",
         "documentation": {}
     },
@@ -499,26 +570,8 @@
         "kind": 5,
         "importPath": "prompting",
         "description": "prompting",
-        "peekOfCode": "BASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str)\n    def __init__(self, parent, message: str, model: MODELS = \"grok-4-fast-reasoning\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt\n    def run(self):",
+        "peekOfCode": "BASIC_MODELS = typing.Literal[\"gpt-4o\", \"gpt-3.5\"]\nclass Worker(QThread):\n    finished = Signal(str, bool)\n    def __init__(self, parent, message: str, model: MODELS = \"gpt-oss-120b\", systemPrompt: str = \"\"):\n        super().__init__()\n        self.parent = parent\n        self.message = message\n        self.model = model\n        self.systemPrompt = systemPrompt\n    def run(self):",
         "detail": "prompting",
-        "documentation": {}
-    },
-    {
-        "label": "getQueryImage",
-        "kind": 2,
-        "importPath": "query",
-        "description": "query",
-        "peekOfCode": "def getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = {}\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class\n    soup = BeautifulSoup(response.text, \"html.parser\")\n    # loop over all image thumbnail elements\n    for a in soup.find_all(\"a\", class_=\"iusc\"):",
-        "detail": "query",
-        "documentation": {}
-    },
-    {
-        "label": "headers",
-        "kind": 5,
-        "importPath": "query",
-        "description": "query",
-        "peekOfCode": "headers = {\n    \"User-Agent\": \"Mozilla/5.0\"\n}\ndef getQueryImage(query: str, limit: int = 1):\n    seen = set()\n    index = 0\n    results = {}\n    # get image page data from url as a string\n    response = requests.get(f\"https://www.bing.com/images/search?q={query}\", headers=headers)\n    # format image page data to a soup class",
-        "detail": "query",
         "documentation": {}
     },
     {

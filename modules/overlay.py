@@ -74,7 +74,7 @@ class ImageOverlay(BasicOverlay):
         ratio = self.image.width/self.image.height
         super().__init__()
         self.resizable(False, False)
-        self.geometry(f"{int(ratio*self.scale)}x{self.scale}")
+        self.geometry(f"{int(ratio*self.scale)}x{int(self.scale)}")
 
     def createUI(self):
         # Convert the PIL image to a Tkinter-compatible PhotoImage object
@@ -116,7 +116,7 @@ class VideoOverlay(BasicOverlay):
         # window sizing
         self.start_frame = Image.fromarray(self.reader.get_data(0))
         self.ratio = self.start_frame.width / self.start_frame.height
-        self.geometry(f"{int(self.ratio * self.scale)}x{self.scale}")
+        self.geometry(f"{int(self.ratio * self.scale)}x{int(self.scale)}")
 
     def createUI(self):
         self.container = tk.Frame(self, bg="#000000")
@@ -193,7 +193,7 @@ class VideoOverlay(BasicOverlay):
         if self._temp_path and os.path.exists(self._temp_path):
             os.remove(self._temp_path)
 
-def createOverlay(overlayType: typing.Literal["img", "txt", "vid", "audio"], position: tuple[int, int] = None, *args, **kwargs):
+def createOverlay(overlayType: typing.Literal["img", "txt", "vid"], position: tuple[int, int] = None, *args, **kwargs):
     if overlayType == "img":
         overlay = ImageOverlay(*args, **kwargs)
     elif overlayType == "txt":
@@ -203,3 +203,7 @@ def createOverlay(overlayType: typing.Literal["img", "txt", "vid", "audio"], pos
     
     overlay.show(position)
     return overlay
+
+createTxtOverlay = lambda txt: createOverlay("txt", None, txt)
+createImgOverlay = lambda img, scale: createOverlay("img", None, img, scale)
+createVidOverlay = lambda vid, scale: createOverlay("vid", None, vid, scale)
